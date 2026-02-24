@@ -4,14 +4,16 @@
              android:layout_height="match_parent">
 
     <TableRow android:layout_width="match_parent"
-              android:layout_height="303dp">
-        <Button android:layout_height="match_parent"
+              android:layout_height="wrap_content">
+
+
+        <Button android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:text="button"></Button>
 
-        <TextView android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="match_parent"
-                  android:text="nottub" android:textAppearance="@style/TextAppearance.AppCompat.Small">
+        <TextView android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="nottub" android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
         <Button
                 android:text="Button"
                 android:layout_width="wrap_content"
@@ -19,8 +21,7 @@
     </TableRow>
 
     <TableRow android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_weight="1">
+              android:layout_height="wrap_content">
         <Button
                 android:text="Button"
                 android:layout_width="wrap_content"
@@ -30,10 +31,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/checkBox" android:layout_weight="1"/>
     </TableRow>
-
     <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="wrap_content">
     >
         <ImageButton
                 android:layout_width="wrap_content"

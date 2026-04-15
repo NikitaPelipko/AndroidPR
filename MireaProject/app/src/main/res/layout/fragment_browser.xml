@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BrowserFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="?attr/colorSurface"
+            android:elevation="4dp">
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_back"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Назад"
+                app:icon="@android:drawable/ic_media_previous"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_forward"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Вперёд"
+                app:icon="@android:drawable/ic_media_next"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/url_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/url_bar_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:inputType="textUri"
+                android:gravity="center_vertical"
+                android:hint="Введите адрес сайта"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_go"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="→"
+                android:textSize="18sp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cornerRadius="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_refresh"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Обновить"
+                app:icon="@android:drawable/ic_menu_rotate"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:visibility="gone"/>
+
+    <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MireaProject</string>
+    <string name="action_settings">Настройки</string>
+
+    <!-- Navigation Drawer header -->
+    <string name="nav_header_title">РТУ МИРЭА</string>
+    <string name="nav_header_subtitle">student@mirea.ru</string>
+    <string name="nav_header_desc">Логотип навигации</string>
+
+    <!-- Menu items — id совпадают с id во фрагментах навигационного графа -->
+    <string name="menu_home">Главная</string>
+    <string name="menu_data">IT-отрасль</string>
+    <string name="menu_browser">Браузер</string>
+
+    <!-- Dimensions -->
+    <string name="nav_header_height_str">176dp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

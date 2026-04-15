@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:padding="24dp"
+                                                   tools:context="PlayerFragment">>
+
+    <ImageView
+            android:id="@+id/imageViewCover"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+    <TextView
+            android:id="@+id/textViewSongTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Electro-Light - Symbolism"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/imageViewCover"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+    <TextView
+            android:id="@+id/textViewSongInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Trap | NCS - Copyright Free Music"
+            android:textSize="14sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/textViewSongTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+    <Button
+            android:id="@+id/playButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="▶ Play"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewSongInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/pauseButton"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp" />
+
+    <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="⏹ Stop"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewSongInfo"
+            app:layout_constraintStart_toEndOf="@id/playButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

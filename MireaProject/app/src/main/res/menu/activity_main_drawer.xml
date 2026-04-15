@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Меню навигационной шторки (Navigation Drawer).
+    android:id каждого <item> ДОЛЖЕН совпадать с android:id
+    соответствующего фрагмента в mobile_navigation.xml —
+    именно так NavigationUI связывает пункты меню с переходами.
+-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <!-- Главный экран -->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+
+
+        <!-- BrowserFragment: браузер -->
+        <item
+            android:id="@+id/nav_browser"
+            android:icon="@drawable/ic_menu_browser"
+            android:title="@string/menu_browser" />
+
+        <item
+                android:id="@+id/nav_player"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:title="Плеер" />
+
+    </group>
+
+</menu>

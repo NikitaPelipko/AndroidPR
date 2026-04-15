@@ -1,0 +1,24 @@
+<resources>
+    <!-- Основная тема приложения (Material3) -->
+    <style name="Theme.MireaProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <!-- Тема без ActionBar (используется в MainActivity) -->
+    <style name="Theme.MireaProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Overlay для AppBar -->
+    <style name="Theme.MireaProject.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Overlay для Popup меню -->
+    <style name="Theme.MireaProject.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
+</resources>
